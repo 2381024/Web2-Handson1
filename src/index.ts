@@ -18,3 +18,15 @@ const personalData: PersonalData = {
     address: "Jl. Raya",
     hobbies: ["coding", "reading", "traveling"],
 }
+
+function printPersonalData(data: PersonalData) {
+    console.log(`Name: ${data.name}`);
+    console.log(`Age: ${data.age}`);
+    console.log(`Email: ${data.email}`);
+    console.log("Hobbies: ");
+    data.hobbies.forEach((hobby) => {
+        console.log(`- ${hobby}`)
+    })
+}
+
+printPersonalData(personalData);
